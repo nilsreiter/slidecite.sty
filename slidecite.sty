@@ -1,0 +1,36 @@
+\RequirePackage{biblatex}
+\RequirePackage{xcolor}
+
+
+\newcommand{\slidecite}[1]{
+  \begin{flushright}
+    \footnotesize
+    \color{gray}
+    \cite{#1}
+  \end{flushright}
+}
+\newcommand{\inlineslidecite}[2][\empty]{
+	\ino{\textcite[#1]{#2}}
+}
+
+\newcommand{\ino}[1]{
+    \hfill{\footnotesize
+    \color{gray}
+    #1}
+}
+
+\newcommand{\iqu}[1]{
+    \hfill{\footnotesize
+    \color{gray}
+    #1}
+}
+
+
+\newcommand{\qu}[1]{
+\begin{flushright}
+    \footnotesize
+    \color{gray}
+    #1
+  \end{flushright}
+}
+
